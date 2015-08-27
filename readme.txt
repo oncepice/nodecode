@@ -1,5 +1,13 @@
 readme
 /**
+ *15-8-27
+ *node.js + socket.io  多人聊天室
+ */
+ 执行代码 node app.js 
+ 监听80端口
+
+
+/**
  * 15-8-19
  * 新增文件写入
  * 相关模块 socket.io http url fs jade
