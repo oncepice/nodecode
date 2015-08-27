@@ -1,8 +1,9 @@
 readme
 /**
  *15-8-27
- *node.js + socket.io  多人聊天室
+ *chat  ： node.js + socket.io  多人聊天室
  */
+ cd chat
  执行代码 node app.js 
  监听80端口
 
