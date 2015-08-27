@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>websocket and node.js</title>
+		<meta charset="utf-8" />
+		<link href="web/style.css" rel="stylesheet" type="text/css">
+
+		<script src="web/jquery-1.11.1.min.js"></script>
+		<script src="../socket.io/socket.io.js"></script>
+		<script src="web/chat.js"></script>
+	</head>
+<body>
+	<div id='errorPage' class='page' style='display:none;'>
+		<h1>
+			当前浏览器不支持WebSocket，请使用其他浏览器，例如chrome 4.0.249.0 +
+		</h1>
+	</div>
+	<div id='prePage' class='page' style='width:690px;text-align:center;'>
+		<input id='nickInput' type='text' placeholder="请输入您的昵称"  />&nbsp;
+		<input id='open' onclick="check()" type='button' value='进入聊天室'  />
+	</div>
+	<div id='mainPage' class='page' style='display:none;'>
+		<div style='overflow:hidden;'>
+			<div class='talkLeft'>
+				<div id='talkFrame'></div>
+				<div id='inputDiv'>
+					<textarea placeholder="嗨，随便说点啥呗" id="message"></textarea>
+				</div>
+				<div style='overflow:hidden;'>
+					<input class='f-right' type='button' value='发送' id="send" />
+				</div>
+			</div>
+			<div class='talkRight'>
+				<div id='onlineUsers'></div>
+			</div>
+		</div>
+		<div style='text-align:center;'>
+			<input type='button' value='退出' id="logout" />
+		</div>
+	</div>
+	</body>
+</html>
+
