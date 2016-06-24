@@ -5,7 +5,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
 
 jQuery.getScript("https://www.ad.com:8001").done(function(data) {
       //tests();
-      //alert(data);
+      alert('loaded');
    }).fail(function() {
 });
 
